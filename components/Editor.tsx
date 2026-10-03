@@ -126,7 +126,7 @@ export default function Editor() {
           {step === 2 && <StepTwo data={data} update={update} addPhoto={addPhoto} />}
           {step === 3 && <StepThree data={data} update={update} />}
           {step === 4 && <StepFour data={data} update={update} />}
-          {step === 5 && <StepFive data={data} update={update} />}
+          {step === 5 && <StepFive data={data} />}
 
           {step === 6 && (
             <div className="success-step">
