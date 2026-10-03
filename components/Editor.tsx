@@ -126,7 +126,7 @@ export default function Editor() {
           {step === 2 && <StepTwo data={data} update={update} addPhoto={addPhoto} />}
           {step === 3 && <StepThree data={data} update={update} />}
           {step === 4 && <StepFour data={data} update={update} />}
-          {step === 5 && <StepFive data={data} />}
+          {step === 5 && <StepFive data={data} createError={createError} />}}
 
           {step === 6 && (
             <div className="success-step">
@@ -229,7 +229,7 @@ function StepFour({data, update}: {data: GiftData; update:any}) {
   </div>
 }
 
-function StepFive({data}: {data: GiftData}) {
+function StepFive({data, createError}: {data: GiftData; createError: string}) {{
   return <div className="step-content">
     <div className="eyebrow"><Sparkles size={15}/> DERNIÈRE VÉRIFICATION</div>
     <h1>Tout est prêt ?</h1>
