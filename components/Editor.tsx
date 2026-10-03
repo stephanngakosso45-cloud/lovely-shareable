@@ -229,7 +229,7 @@ function StepFour({data, update}: {data: GiftData; update:any}) {
   </div>
 }
 
-function StepFive({data, createError}: {data: GiftData; createError: string}) {{
+function StepFive({data, createError}: {data: GiftData; createError: string}) {
   return <div className="step-content">
     <div className="eyebrow"><Sparkles size={15}/> DERNIÈRE VÉRIFICATION</div>
     <h1>Tout est prêt ?</h1>
